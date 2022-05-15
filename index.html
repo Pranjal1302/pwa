@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Online Store</title>
+	<title>Furnichase Store</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equip="X-UA-compatible" content="ie=edge">
@@ -152,12 +152,12 @@
 								<div class="product-description" data-name="Mirror" data-price="10">
 
 									<p class="product-price">&euro; 10</p>
-									<form class="add-to-cart" action="cart.html" method="post">
+									<form class="add-to-cart" action="/pages/cart.html" method="post">
 										<div>
 											<label for="qty-2">Quantity</label>
 											<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
 										</div>
-										<a href="javascript:void(0)" onclick="start()">
+										<a href="/pages/cart.html" onclick="start()">
 											<button type="submit" class="btn btn-primary">Add to Cart</button>
 
 										</a>
@@ -1022,9 +1022,9 @@
 						body: 'Welcome to Furnichase',
 						icon: '/images/icons/icon-72x72.png',
 						timeout: 8000,
-						onClick: function () {
-							window.location.href = '#about';
-						}
+						// onClick: function () {
+						// 	window.location.href = '#about';
+						// }
 					});
 				}
 				$(".slider-one")
